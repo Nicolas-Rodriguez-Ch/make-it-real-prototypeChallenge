@@ -94,7 +94,7 @@ console.log(a1.velocidad);// 0
 // El ejercicio se resuelve en equipos, en un repositorio. La entrega la hacen todos los integrantes, la entrega es unicamente el link del repositorio
 String.prototype.palindrome = function () {
     let newArr = [];
-    for (let i = 0; i < this.split('').length; i++) {
+    for (let i = 0; i < this.length; i++) {
         newArr.unshift(this[i]);
     }
     return this.replaceAll(' ', '') == newArr.join('').replaceAll(' ', '') ;
